@@ -9,3 +9,6 @@ These Codes are C# based Matrix Operations for Rhino3d Grasshopper environment.
 
 ## Dot Product
 ![image](https://user-images.githubusercontent.com/93954052/140839269-dca24a9c-e736-406e-93a8-1100809cce72.png)
+
+## Vector Product
+![image](https://user-images.githubusercontent.com/93954052/140839876-201e0717-2f2e-4cec-b9a6-8eb257ee37a9.png)
