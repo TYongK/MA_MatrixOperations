@@ -13,5 +13,5 @@ These Codes are C# based Matrix Operations for Rhino3d Grasshopper environment.
 ## Vector Product
 ![image](https://user-images.githubusercontent.com/93954052/140839876-201e0717-2f2e-4cec-b9a6-8eb257ee37a9.png)
 
-## LU Decompose
+## LU Decomposition
 ![LUDecompose](https://user-images.githubusercontent.com/93954052/140932674-27559ac2-2478-43ea-8018-8277d0ec103c.png)
