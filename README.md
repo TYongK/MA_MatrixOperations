@@ -3,7 +3,7 @@ These Codes are C# based Matrix Operations for Rhino3d Grasshopper environment.
 Grasshopper sample file can be downloaded from the Repository.
 
 The Matrix operations are for the 2D Matrix.
-Data type of inputs and outputs is **DataTree<<"double">>**
+Data type of inputs and outputs is **DataTree"<double>"**
 
 Raw: Branches
 Column: Index
