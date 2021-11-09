@@ -15,3 +15,6 @@ These Codes are C# based Matrix Operations for Rhino3d Grasshopper environment.
 
 ## LU Decomposition
 ![LUDecompose](https://user-images.githubusercontent.com/93954052/140932674-27559ac2-2478-43ea-8018-8277d0ec103c.png)
+
+## Inverse Matrix
+![Inverse](https://user-images.githubusercontent.com/93954052/140942536-41883292-e756-40e1-9951-9e4285633f0a.png)
