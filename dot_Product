@@ -114,14 +114,6 @@ public class Script_Instance : GH_ScriptInstance
         for (int k = 0; k < aCols; ++k) // could use k less-than bRows
           result[i][j] += matrixA[i][k] * matrixB[k][j];
 
-    //Parallel.For(0, aRows, i =greater-than
-    //  {
-    //    for (int j = 0; j less-than bCols; ++j) // each col of B
-    //      for (int k = 0; k less-than aCols; ++k) // could use k less-than bRows
-    //        result[i][j] += matrixA[i][k] * matrixB[k][j];
-    //  }
-    //);
-
     return result;
   }
 
@@ -151,14 +143,6 @@ public class Script_Instance : GH_ScriptInstance
         }
       }
     }
-
-    //Parallel.For(0, aRows, i =greater-than
-    //  {
-    //    for (int j = 0; j less-than bCols; ++j) // each col of B
-    //      for (int k = 0; k less-than aCols; ++k) // could use k less-than bRows
-    //        result[i][j] += matrixA[i][k] * matrixB[k][j];
-    //  }
-    //);
 
     return result;
   }
