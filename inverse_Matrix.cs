@@ -332,6 +332,54 @@ public class Script_Instance : GH_ScriptInstance
     }
     return result;
   }
+
+  static dynamic MatrixInverse(double[][] matrix)
+  {
+      int rows = matrix.Length;
+      int cols = matrix[0].Length; // assume square
+
+      //Tree into [][] Start//
+      double[][] matrix_TtoM = MatrixCreate(rows, cols);
+      for(int i = 0; i < rows; i++)
+      {
+          for(int j = 0; j < cols; j++)
+          {
+              matrix_TtoM[i][j] = matrix[i][j];
+          }
+      }
+      //Tree into [][] End//
+
+      int n = matrix.Length;
+      double[][] result = matrix_TtoM;
+
+      int[] perm;
+      int toggle;
+      string state;
+      double[][] lum = MatrixDecompose(matrix, out perm, out toggle, out state);
+
+      if (lum == null)
+      {
+      return "Unable to compute inverse";
+      }
+
+      double[] b = new double[n];
+      for (int i = 0; i < n; ++i)
+      {
+          for (int j = 0; j < n; ++j)
+          {
+              if (i == perm[j])
+              b[j] = 1.0;
+              else
+              b[j] = 0.0;
+          }
+
+          double[] x = HelperSolve(lum, b); //
+
+          for (int j = 0; j < n; ++j)
+              result[j][i] = x[j];
+      }
+      return result;
+  }
   //////////////////////////////////
   // Resource#1: https://jamesmccaffrey.wordpress.com/2015/03/06/inverting-a-matrix-using-c/
   // Resource#2: https://en.wikipedia.org/wiki/LU_decomposition
